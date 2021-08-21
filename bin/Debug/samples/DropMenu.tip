@@ -1,0 +1,67 @@
+BEGIN
+<H1>Drop down menu example</H1>
+
+<button class="menu menu-black" onclick="ShowMenu('food');">Food</button>
+<div id="food" class="panel">
+<ul>
+    <li>Beans</li>
+    <li>Chips</li>
+    <li>Beef</li>
+    <li>Tuna</li>
+    <li>Pawns</li>
+</ul>
+</div>
+
+<button class="menu menu-blue" onclick="ShowMenu('colors');">Colors</button>
+<div id="colors" class="panel">
+<ol>
+    <li>Red</li>
+    <li>Orange</li>
+    <li>Pink</li>
+    <li>Yellow</li>
+    <li>Black</li>
+</ol>
+</div>
+
+
+END.
+BEGIN
+button.menu{
+    width:100%;
+    outline:none;
+    padding:18px;
+    border: none;
+    cursor:pointer;
+    text-align: left;
+    margin-bottom:8px;
+    font-size:16px;
+}
+
+.menu:hover{background-color:#BCBCBC;}
+.menu-red{background-color:#FF4040;}
+.menu-red:hover{background-color:#FFC6C6;}
+.menu-black{background-color:#111;color:#fff}
+.menu-black:hover{background-color:#444;}
+.menu-green{background-color:#4CAF50;color:#fff}
+.menu-green:hover{background-color:#80C883;}
+.menu-blue{background-color:#0000CC;color:#fff}
+.menu-blue:hover{background-color:#8080FF;}
+
+div.panel{
+    padding: 0 18px;
+    color:#111;
+    display:none;
+}
+END.
+BEGIN
+function ShowMenu(mnuId){
+    //Get menu id
+    var id = document.getElementById(mnuId);
+    //Toggle the panel show/hide
+    if(id.style.display == "block"){
+        id.style.display = "none";
+    }else{
+        id.style.display = "block";
+    }
+}
+END.

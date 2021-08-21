@@ -1,0 +1,22 @@
+BEGIN
+<ul>
+    <li>Bread</li>
+    <li>Cheese</li>
+    <li>Tomato</li>
+</ul>
+END.
+BEGIN
+ul{
+    display:block;
+}
+li{
+    font-weight:bold;
+}
+
+li:hover{
+    color:red;
+    cursor:pointer;
+}
+END.
+BEGIN
+END.

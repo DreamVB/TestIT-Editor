@@ -1,0 +1,42 @@
+BEGIN
+<h1>Buttons Demo</h1>
+<button id="btn-red">Red</button>
+<button id="btn-green">Green</button>
+<button id="btn-orange">Orange</button>
+<button id="btn-yellow">Yellow</button>
+END.
+BEGIN
+button{
+    border: 0px;
+    background-color:lightgray;
+    width:82px;
+    padding:10px;
+    margin-left:10px;
+    font-family:Verdana;
+    font-size:16px;
+    text-align:center;
+    cursor:pointer;
+}
+
+#btn-red{
+    background-color:red;
+    color:#fff;
+}
+
+#btn-orange{
+    background-color:#FF8040;
+    color:#fff;
+}
+
+#btn-green{
+    background-color:green;
+    color:#fff;
+}
+
+#btn-yellow{
+    background-color:#FFFF4F;
+    color:#111;
+}
+END.
+BEGIN
+END.

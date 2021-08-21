@@ -1,0 +1,41 @@
+BEGIN
+<button id="me" class="menu" onclick="ExpandMnu('news');">Click</button>
+<div id="news" class="panel">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+</div>
+
+<button id="me" class="menu" onclick="ExpandMnu('bob');">Click</button>
+<div id="bob" class="panel">
+    <p>Just some more text</p>
+</div>
+
+END.
+BEGIN
+button.menu{
+    width:100%;
+    outline:none;
+    padding:18px;
+    border: none;
+    cursor:pointer;
+    text-align: left;
+    background-color:#eee;
+    margin-bottom:8px;
+}
+
+.panel{
+    padding: 0 18px;
+    color:#111;
+    display:none;
+}
+END.
+BEGIN
+function ExpandMnu(src){
+    var acc = document.getElementById(src);
+    if(acc.style.display == "block"){
+        acc.style.display = "none";
+    }else{
+        acc.style.display = "block";
+    }
+
+}
+END.
